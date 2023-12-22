@@ -1,0 +1,86 @@
+<html>
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 	
+    <link rel="stylesheet" type="text/css" href="Sobrenosotros.css" title="style" />	
+    <title>Sobre nosotros</title> 
+</head> 
+<body>
+    <nav>
+        <div class="logo"><img alt="Volver al índice" src="./Imagenes/logovom.jpg" width="80" height="80"></div>
+        <div class="listas">
+            <div><a href="Sobrenosotros.html">Sobre nosotros</a></div>
+            <div><a href="Noticias.html">Noticias</a></div>
+            <div><a href="Animales.html">Animales</a></div>
+            <div><a href="Interesante.html">Interesante</a></div>
+        </div>
+    </nav>
+        <div class="contenido">
+    <h1>Sobre nosotros</h1>
+    <p>Te gustaría ser cliente para tener más información referente al mundo de los animales<br></br>
+    Rellene el formulario:</p>
+</div>
+<div class="principal"></div>
+<div class="formulario">			
+    <h1>Formulario de contacto</h1>
+              <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+                  <form action="submeter-formulario.php" method="post">				
+
+                      
+                              <p>
+                                  <label for="nombre" class="colocar_nombre">Nombre
+                                      <span class="obligatorio">*</span>
+                                  </label>
+                                      <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                              </p>
+                          
+                              <p>
+                                  <label for="email" class="colocar_email">Email
+                                      <span class="obligatorio">*</span>
+                                  </label>
+                                      <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                              </p>
+                              <p>
+                                <label for="contrasenña">Contraseña</label>
+                                <input type="password" id="contrasenña" name="contraseña" placeholder="Escribe tu contrasenña">
+                            </p>
+                              <p>
+                                  <label for="telefone" class="colocar_telefono">Teléfono
+                                  </label>
+                                      <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                              </p>				
+                              <p>
+                                <div>
+                                    <label for="Provincia">Provincia</label><br/>
+                                <select name="select">
+                                        <option value="Selecciona">-selecciona-</option>
+                                        <option value="Almería">Almería</option>
+                                        <option value="Sevilla">Sevilla</option>
+                                        <option value="Granada">Granada</option>
+                                        <option value="Málaga">Málaga</option>
+                                        <option value="Jaén">Jaén</option>
+                                        <option value="Córdoba">Córdoba</option>
+                                        <option value="Cádiz">Cádiz</option>
+                                        <option value="Huelva">Huelva</option>
+                                 </select>
+                              </p>
+                              <p>
+                                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                                      <span class="obligatorio">*</span>
+                                  </label>                     
+                                       <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                 </p>	  								
+                          
+                              <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                              <button type="reset" name="borrar_formulario" id="borrar"><p>Borrar formulario</p></button>
+
+                              <p class="aviso">
+                                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                              </p>					
+                      
+                  </form>
+</section>  
+</div>
+</body>
+</html>

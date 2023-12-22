@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+body {
+  background-color: #192655;
+  background-image: url(./Imagenes/Fondoint.jpg);
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background: aliceblue;
+  font-family: sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: black;
+}
+
+nav .listas {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin-right: 30px;
+}
+
+nav .listas a {
+  text-decoration: none;
+}
+
+nav .listas div {
+  padding: 10px 20px;
+}
+
+/*se añade hover para  cuando el usuario interactúa con
+   un elemento con un dispositivo señalador. Poner el color el borde*/
+nav .listas div:hover {
+  cursor: pointer;
+  background: #E1AA74;
+}
+
+h3 {
+  text-align: center;
+  border: #192655 2px solid;
+}
+
+/*-------*/
+* {
+  box-sizing: border-box;
+}
+
+#contenedor {
+  width: 100%;
+  /*ancho del contenedor*/
+  border: 0px solid #000;
+  /*borde del contenedor*/
+}
+
+/* Estilo del encabezado */
+#cabecera {
+  color: #E1AA74;
+  text-transform: uppercase;
+  margin-top: 6em;
+  margin-bottom: 3em;
+  background-image: url(./Imagenes/titulo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 5px;
+}
+
+#Menu h1 {
+  color: #E1AA74;
+
+}
+
+/* Crear 3 columnas*/
+.column1 {
+  float: left;
+  width: 30%;
+  padding: 30px 5px;
+  height: 400px;
+  /* Should be removed. Only for demonstration */
+  background-color: #192655;
+
+}
+
+.column3 {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  height: 130%;
+  /* Should be removed. Only for demonstration */
+  background-color: #E1AA74;
+
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 125%;
+  background-color: #b0d8d8;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.pie {
+  background-color: #F3F0CA;
+  padding: 10px;
+  text-align: center;
+}
+
+/*EL MENU COMO HACER*/
+li {
+  list-style-type: none;
+  position: relative;
+}
+
+li a {
+  text-decoration: none;
+  display: block;
+  padding: 20px 8px;
+  width: 150px;
+  border: 1px solid #192655;
+  color: #fff;
+  background-color: #3876BF;
+}
+
+li a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+li>ul {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 120px;
+}
+
+li:hover>ul {
+  display: block;
+}
+
+li>ul>li {
+  float: left;
+}

@@ -1,0 +1,127 @@
+@charset "UTF-8"; 
+body{
+  background-color:#192655 ;
+  background-image: url(./Imagenes/fondonotic.jpg);
+
+}
+nav{
+  display:grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background: aliceblue;
+  font-family: sans-serif;
+  position:fixed;
+  top:0;
+  width:100%;
+}
+nav .logo{
+  font-size: 24px;
+  font-weight:black;
+  }
+nav .listas{
+  display:grid;
+  grid-template-columns: repeat(4,auto);
+  margin-right: 30px;
+}
+nav .listas a{
+      text-decoration: none;
+}
+nav .listas div{
+  padding: 10px 20px;
+}
+  /*se añade hover para  cuando el usuario interactúa con
+   un elemento con un dispositivo señalador. Poner el color el borde*/
+nav .listas div:hover{
+  cursor: pointer;
+  background:#E1AA74;
+}
+#Titulo h1{
+  color: #E1AA74;
+  text-transform: uppercase;
+  margin-top: 4em; 
+  margin-bottom: 3em;
+  background-image: url(./Imagenes/titulo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+#contenedor {
+  width: 100%;  /*ancho del contenedor*/
+}
+#cabecera {
+ background-color: #F3F0CA;  /*color de la cabecera*/
+ padding:30px;  /*padding de la cabecera 10px*/
+  color:black;  /*color del texto de la cabecera*/
+  text-align: center;
+}
+#menu {
+  float: left;
+  width: 50%;
+   margin-right: 2%;
+   background-color: #E1AA74;
+
+}
+
+#contenido {
+  float: left;
+  width: 35%;
+  background-color: #3876BF;
+  color:#fff;
+  text-align: center;
+  margin-top: 3em;
+  padding: 1em 2em;
+  border: double 4px #192655;
+}
+
+#pie {
+  clear: both;
+   background-color: #F3F0CA;
+   padding:10px;
+   text-align: center;
+}
+.Perro{
+  border: #000 solid 2px;
+  color: white;
+  margin-top: 20px;
+}
+.eslabón{
+  border: #000 solid 2px;
+  color: white;
+  margin-top: 20px;
+}
+.Simios{
+  border: #000 solid 2px;
+  color: white;
+  margin-top: 20px;
+}
+.Delfines{
+  border: #000 solid 2px;
+  color: white;
+  margin-top: 20px;
+}
+.Flamencos{
+  border: #000 solid 2px;
+  color: white;
+  margin-top: 20px;
+}
+.tigre{
+  text-align: center;
+}
+.Perro img{
+  filter: drop-shadow(5px 3px 3px #0d76ff);
+}
+.eslabón img{
+  filter: drop-shadow(5px 3px 3px #0d76ff);
+}
+.Delfines img{
+  filter: drop-shadow(5px 3px 3px #0d76ff);
+}
+.Flamencos img{
+  filter: drop-shadow(5px 3px 3px #0d76ff);
+}
+.Simios img{
+  filter: drop-shadow(5px 3px 3px #0d76ff);
+}
+#contenido h1{
+  color: #E1AA74;
+}

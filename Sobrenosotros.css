@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+body {
+  background-color: #192655;
+  background-image: url(./Imagenes/fondo2.jpg);
+
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background: aliceblue;
+  font-family: sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: black;
+}
+
+nav .listas {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin-right: 30px;
+}
+
+nav .listas a {
+  text-decoration: none;
+}
+
+nav .listas div {
+  padding: 10px 20px;
+}
+
+/*se añade hover para  cuando el usuario interactúa con
+     un elemento con un dispositivo señalador. poner el color el borde*/
+nav .listas div:hover {
+  cursor: pointer;
+  background: #E1AA74;
+}
+
+.contenido h1 {
+  text-transform: uppercase;
+  margin-top: 3em;
+  background-image: url(./Imagenes/titulo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #E1AA74;
+  text-align: center;
+
+
+}
+
+.contenido p {
+  color: #E1AA74;
+  background-color: #192655;
+  width: calc(30%);
+  padding: 3em;
+  border: #E1AA74 solid 1px;
+  border-radius: 10%;
+
+}
+
+.formulario {
+  background-color: #E1AA74;
+  backdrop-filter: blur(55px);
+  text-align: center;
+  width: 800px;
+  margin-left: 29%;
+  border: #3876BF solid 3px;
+
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 508px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #3876BF;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3876BF;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+
+label {
+  display: block;
+  float: center;
+}
+
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 2px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #E1AA74;
+  border-color: #192655;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+
+button p {
+  color: #fff;
+}
+
+
+span {
+  color: red;
+}
+
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+
+h1 {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: #192655;
+}
+
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+
+
+p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
